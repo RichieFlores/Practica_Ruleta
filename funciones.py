@@ -12,14 +12,52 @@ def ruleta():
 
 	if (n_ganador != 0):
 		if ( n_ganador % 2 == 0 ):
- 			print ( str(n_ganador) + " es par")
+ 			return ( str(n_ganador) + " es par")
 
 		else:
- 			print (str(n_ganador)+" es impar")
+ 			return (str(n_ganador)+" es impar")
 
  	else:
 
- 		print n_ganador
+ 		return n_ganador
 
 
-ruleta()
+
+
+def apuesta():
+
+	flag=1
+	n_apuesta=[]
+	c_apuesta=[]
+
+	while flag ==1:
+	#n_apuesta solo se usa para que el usuario ingrese las apuestas 
+		
+		n_apuesta.append (raw_input("Ingresa un  numero al que le quieres apostar: "))
+		c_apuesta.append (raw_input ("Ingresa el monto que deseas apostar: "))
+
+		mas_apuestas=raw_input("Deseas hacer otra apuesta? Si o No")
+		
+
+		if mas_apuestas.upper() == "NO":
+			flag =0
+
+
+	return n_apuesta
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
